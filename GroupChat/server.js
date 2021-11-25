@@ -9,8 +9,7 @@ const io = require( 'socket.io' )( server );
 const chatlog=[];
 
 io.on( 'connection', function( socket ){
-    //console.log( socket );
-    console.log( "Someone just connected!" );
+ 
 
 
     socket.on( 'general', function( data ){
